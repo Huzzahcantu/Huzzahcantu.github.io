@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class='bx bxs-watch nav__logo-icon'></i> KUKICHI
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link">Destacado</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Productos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">Nuevo</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <div class="nav__shop cart__icon" id="cart-shop">
+                        <i class='bx bx-shopping-bag ' ></i>
+                        <span class="cart__counter">0</span>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+            </nav>
+        </header>
+
+        <!--==================== CART ====================-->
+        <div id="cart" class="cart">
+            <div class="cart__header">
+              <h2 class="cart__title-center">Carrito de compras</h2>
+              <span id="cart-close" class="cart__close"><i class="bx bx-x"></i></span>
+            </div>
+            <div class="cart__container">
+              <!-- Contenido dinámico del carrito -->
+            </div>
+            <div class="cart__prices">
+              <span class="cart__prices-item">0 items</span>
+              <span class="cart__prices-total">$0.00</span>
+            </div>
+            <div class="cart__buy">
+                <button id="cart-button" class="cart__button button">Comprar</button>
+              </div>
+          </div>
+          
+
+                    <!--==================== PRODUCTS ====================-->
+                    <section class="products section container" id="products">
+                        <h2 class="section__title">
+                            Productos
+                        </h2>
+        
+                        <div class="products__container grid">
+                            <article class="products__card">
+                                <img src="assets/img/680.webp" alt="" class="products__img">
+        
+                                <h3 class="products__title">kukichi 01</h3>
+                                <span class="products__price">S/10.50</span>
+        
+                                <button class="products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </article>
+        
+                            <article class="products__card">
+                                <img src="assets/img/770281162_1.jpeg" alt="" class="products__img">
+        
+                                <h3 class="products__title">Plantita kukichi 02</h3>
+                                <span class="products__price">$13</span>
+        
+                                <button class="products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </article>
+        
+                            <article class="products__card">
+                                <img src="assets/img/zapa1.jpg" alt="" class="products__img">
+        
+                                <h3 class="products__title">Plantita kukichi 03</h3>
+                                <span class="products__price">$70</span>
+        
+                                <button class="products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </article>
+        
+                            <article class="products__card">
+                                <img src="assets/img/770469702_1.jpeg" alt="" class="products__img">
+        
+                                <h3 class="products__title">Plantita kukichi 04</h3>
+                                <span class="products__price">$60</span>
+        
+                                <button class="products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </article>
+        
+                            <article class="products__card">
+                                <img src="assets/img/8888698_01.jpeg" alt="" class="products__img">
+        
+                                <h3 class="products__title">Plantita kukichi 05</h3>
+                                <span class="products__price">$50</span>
+        
+                                <button class="products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </article>
+                        </div>
+                    </section>
+
+    
+
+
+
+    
+
+
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/javascript/main.js"></script>    
+
+</body>
+</html>
