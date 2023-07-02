@@ -121,7 +121,7 @@ body.dark-theme {
 
 /*========== Button Dark/Light ==========*/
 .change-theme {
-  color: var(--title-color);
+  color: hsl(0, 0%, 100%);
   font-size: 1.25rem;
   cursor: pointer;
 }
@@ -134,7 +134,7 @@ body.dark-theme {
 .dark-theme .nav__toggle,
 .dark-theme .nav__shop,
 .dark-theme .button--gray {
-  color: hsl(0, 0%, 15%);
+  color: hsl(0, 0%, 100%);
 }
 
 .dark-theme .scroll-header {
@@ -210,12 +210,13 @@ body.dark-theme {
   align-items: center;
 }
 
-.nav__logo, 
+.nav__logo{
+  color: var(--title-color);
+}
 .nav__toggle, 
 .nav__shop, 
 .nav__close {
-  color: var(--title-color);
-}
+  color: hsl(0, 0%, 100%);}
 
 .nav__logo {
   text-transform: uppercase;
