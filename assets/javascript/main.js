@@ -68,26 +68,7 @@ const scrollHeader = () => {
 
 window.addEventListener('scroll', scrollHeader);
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('section[id]')
-    
-const scrollActive = () =>{
-  	const scrollY = window.pageYOffset
 
-	sections.forEach(current =>{
-		const sectionHeight = current.offsetHeight,
-			  sectionTop = current.offsetTop - 58,
-			  sectionId = current.getAttribute('id'),
-			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
-
-		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-			sectionsClass.classList.add('active-link')
-		}else{
-			sectionsClass.classList.remove('active-link')
-		}                                                    
-	})
-}
-window.addEventListener('scroll', scrollActive)
 
 /*=============== DARK LIGHT THEME ===============*/
 const themeButton = document.getElementById('theme-button');
@@ -258,24 +239,24 @@ function decreaseQuantity(index) {
   }
 }
 
-const addToCartFeaturedButtons = document.querySelectorAll('.featured__card .featured__button');
+// const addToCartFeaturedButtons = document.querySelectorAll('.featured__card .featured__button');
 
-addToCartFeaturedButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const cardContainer = button.closest('.featured__card');
-    const productImage = cardContainer.querySelector('.featured__img').src;
-    const productName = cardContainer.querySelector('.featured__title').textContent;
-    const productPrice = parseFloat(cardContainer.querySelector('.featured__price').textContent.slice(2)).toFixed(2);
+// addToCartFeaturedButtons.forEach((button) => {
+//   button.addEventListener('click', () => {
+//     const cardContainer = button.closest('.featured__card');
+//     const productImage = cardContainer.querySelector('.featured__img').src;
+//     const productName = cardContainer.querySelector('.featured__title').textContent;
+//     const productPrice = parseFloat(cardContainer.querySelector('.featured__price').textContent.slice(2)).toFixed(2);
 
-    const product = {
-      image: productImage,
-      name: productName,
-      price: productPrice,
-    };
+//     const product = {
+//       image: productImage,
+//       name: productName,
+//       price: productPrice,
+//     };
 
-    addToCart(product);
-  });
-});
+//     addToCart(product);
+//   });
+// });
 
 /* Agregar productos al hacer clic en el botón "Add to Cart" */
 const addToCartButtons = document.querySelectorAll('.products__button');
@@ -310,9 +291,9 @@ function generateWhatsAppMessage() {
   cartItems.forEach((product) => {
     const total = product.price * product.quantity;
     message += `  Producto: ${product.name}\n`;
-    message += `  Precio unitario: S/${product.price}\n`;
-    message += `  Cantidad: ${product.quantity}\n`;
-    message += `  Total: S/${total.toFixed(2)}\n\n`;
+    message += `  Precio: S/${product.price}\n`;
+    message += `  Cantidad: ${product.quantity}\n\n`;
+    // message += `  Total: S/${total.toFixed(2)}\n\n`;
   });
 
   message += `Total de la compra: ${calculateTotal()}`;
