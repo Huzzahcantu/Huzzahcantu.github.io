@@ -370,6 +370,7 @@ body.dark-theme {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
+  border-radius: 0.5rem;
   background-color: var(--button-color);
   color: #FFF;
   padding: 1.25rem 2rem;
@@ -1375,8 +1376,7 @@ body.dark-theme {
     right: 3rem;
   }
 
-  .speciality__box{
-  }
+
   .speciality__group{
     text-align: initial;
   }
